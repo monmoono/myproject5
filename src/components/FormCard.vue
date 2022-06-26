@@ -33,12 +33,7 @@
                 >
                   Close
                 </button>
-                <button
-                  class="btn primary"
-                  style="margin-left: 10px"
-                  @click="showModal = false"
-                  v-on:click="eventclick('Save successfully')"
-                >
+                <button class="btn primary" style="margin-left: 10px" @click="showModal = false" v-on:click="eventclick('Save successfully')">
                   Save
                 </button>
               </div>
@@ -59,8 +54,8 @@ h3
 
 .modal
   position: absolute
-  top: 40%
-  left: 30%
+  top: 30%
+  left: 40%
   right: 50%
   transform: framslate(-50%,-50%)
   z-index: 99
@@ -91,9 +86,9 @@ export default {
       showModal: true,
     };
   },
-  method: {
-    eventclick:function(message){
-      alert(message)
+  methods: {
+    eventclick(message){
+      alert(message)      
     }
   },
 };

@@ -59,21 +59,21 @@
     </div>
     <footer>
       <div class="card-footer">
-        <div class="card-text-footer">
-          <h2 class="card-title">This is Exam Question 3 "Pagination"</h2>
-          <div class="card-text" style="margin-bottom: 15px">
-            If you want to see the results of Exam 4, change the Pagination to
-            the next page.
+        <div class="card-text-footer">          
+          <div class="card-text">            
             <div class="pagination-center">
               <div class="pagination">
+                <h2 class="card-title" style="margin-top: 20px">This is Exam Question 3 "Pagination"</h2>
+                <p style="width: 400px;margin-top: 20px;">If you want to see the results of Exam 4, change the Pagination to
+            the next page.</p>
                 <!-- <router-link to="/">&laquo;</router-link> |
             <router-link to="/FormButton">1</router-link>
             <router-link to="/FormLayout">2</router-link>
             <router-link to="/contract">&raquo;</router-link>             -->
-                <button>&laquo;</button>
-                <button v-on:click="next((showformbutton = true))">1</button>
-                <button v-on:click="next((showformbutton = false))">2</button>
-                <button>&raquo;</button>
+                <button v-on:click="next((showformbutton = true))">&laquo;</button>
+                <button v-on:click="next((showformbutton = true))" ref="bt1">1</button>
+                <button v-on:click="next((showformbutton = false))" ref="bt2">2</button>
+                <button v-on:click="next((showformbutton = false))">&raquo;</button>
               </div>
             </div>
           </div>
@@ -124,7 +124,10 @@ export default {
     // padding-bottom: 0px
 
 .pagination
-    display: inline-block
+    display: flex
+    width: 1000px
+    margin-left: 150px
+    
 
 .pagination button
     color: black
@@ -133,14 +136,19 @@ export default {
     text-decoration: none
     margin-top: 20px
 
-.pagination button.active
-    background-color: orange
+.pagination button:active  
+    background-color: #333
+    color: white
+    border-radius: 5px
+
+.pagination button:focus  
+    background-color: #333
     color: white
     border-radius: 5px
 
 .pagination button:hover:not(.active)
     background-color: #333
-    border-radius: 5px
+    border-radius: 10px
     color: white
 
 .pagination-center

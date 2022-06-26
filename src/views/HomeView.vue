@@ -38,9 +38,9 @@ export default {
 <style lang="sass" scoped>
 .formCenter
   background-color: #fff
-  margin-left: 20%
+  margin-left: 26.69%
   margin-top: 20px
-  margin-right: 20px
   border: 2px solid
   height: 400px
+  width: 1200px
 </style>

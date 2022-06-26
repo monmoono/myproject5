@@ -23,7 +23,9 @@ export default {
       slides: [
         "https://picsum.photos/id/240/1200/500",
         "https://picsum.photos/id/241/1200/500",
-        "https://picsum.photos/id/242/1200/500"
+        "https://picsum.photos/id/242/1200/500",
+        "https://picsum.photos/id/243/1200/500",
+        "https://picsum.photos/id/244/1200/500",
       ],
       visibleSlide: 0,
     };
@@ -35,7 +37,7 @@ export default {
   },
   methods: {
     next() {
-      console.log("next",this.slides.length,this.visibleSlide);
+      console.log("next", this.slides.length, this.visibleSlide);
       if (this.visibleSlide >= this.slidesLen - 1) {
         this.visibleSlide = 0;
       } else {
@@ -43,7 +45,7 @@ export default {
       }
     },
     prev() {
-      console.log("prev",this.slides.length,this.visibleSlide);
+      console.log("prev", this.slides.length, this.visibleSlide);
       if (this.visibleSlide <= 0) {
         this.visibleSlide = this.slidesLen - 1;
       } else {
@@ -62,6 +64,4 @@ export default {
 .slider
     display: flex
     justify-content: center
-
-
 </style>
