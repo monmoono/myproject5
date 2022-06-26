@@ -8,26 +8,16 @@
 export default {
   props: ["visibleSlide", "index"],
   data() {
-    return {
-      index: 0,
-    };
+ 
   },
-  computed: {
-    visible() {
-      return this.index === this.$parent.index;
-    },
-    dir() {
-      console.log(this.$parent.slideDirection);
-      return this.$parent.slideDirection;
-    },
-  },
+
 };
 </script>
 
 <style lang="sass" scoped>
 .carousel-slide
     position: absolute
-    top: 0
+    top: 18px
     left: 0
     bottom: 0
     right: 0

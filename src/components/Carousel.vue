@@ -28,6 +28,14 @@ export default {
   height: 500px
   z-index: 10
 
+button
+  position: absolute
+  height: 40px
+  width: 50px
+  top: calc(50% - 20px)
+  background-color: black
+
+
 .bt-slid
   padding: 5px 10px
   background-color: rgba(0,0,0,0.5)
@@ -42,6 +50,7 @@ export default {
 
 .bt-slid:hover
   cursor: pointer
+  background-color: black
 
 .bt-slid:focus
   outline: none
