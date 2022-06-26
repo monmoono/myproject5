@@ -32,7 +32,7 @@ const routes = [
     path: '/FormLayout',
     name:'FormLayout',
     component: () => import(/* webpackChunkName: "about" */ '../components/FormLayout.vue')
-  }
+  },
 ]
 
 const router = createRouter({

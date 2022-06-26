@@ -37,6 +37,7 @@
                   class="btn primary"
                   style="margin-left: 10px"
                   @click="showModal = false"
+                  v-on:click="eventclick('Save successfully')"
                 >
                   Save
                 </button>
@@ -50,7 +51,7 @@
 </template>
 
 <style lang="sass" scoped>
-h3  
+h3
   font-size: 26px
   position: absolute
   left: 110px
@@ -89,6 +90,11 @@ export default {
     return {
       showModal: true,
     };
+  },
+  method: {
+    eventclick:function(message){
+      alert(message)
+    }
   },
 };
 </script>

@@ -6,11 +6,13 @@
     <div>
       <Slider />
     </div>
-    <div id="FormButton" class="tabcontent">
-      <FormButton />
-    </div>
-    <div id="Pagination" class="tabcontent">
-      <Pagination />
+    <div class="formCenter">
+      <div id="FormButton">
+        <FormButton />
+      </div>
+      <div id="FormButton">
+        <FormLayout />
+      </div>     
     </div>
   </div>
 </template>
@@ -20,8 +22,7 @@
 import HelloWorld from "@/components/HelloWorld.vue";
 import FormCard from "@/components/FormCard.vue";
 import Slider from "@/components/Slider.vue";
-import FormButton from "@/components/FormButton.vue";
-import Pagination from "@/components/Pagination.vue";
+import FormLayout from "@/components/FormLayout.vue";
 
 export default {
   name: "HomeView",
@@ -29,8 +30,17 @@ export default {
     HelloWorld,
     FormCard,
     Slider,
-    // FormButton,
-    // Pagination,
+    FormLayout,
   },
 };
 </script>
+
+<style lang="sass" scoped>
+.formCenter
+  background-color: #fff
+  margin-left: 20%
+  margin-top: 20px
+  margin-right: 20px
+  border: 2px solid
+  height: 400px
+</style>

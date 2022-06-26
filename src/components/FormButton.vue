@@ -14,3 +14,8 @@
     </div>
   </div>
 </template>
+
+<style lang="sass" scoped>
+h2
+  margin-top: 10px 
+</style>
